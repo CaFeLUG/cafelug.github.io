@@ -5,14 +5,14 @@ El propósito bajo el cual se pretende implementar esta plataforma es el de hall
 * Visualizar y analizar mejor cierta información
 * Implementar una herramienta colaborativa específica
 
-Hay destacar que la filosofía del proyecto está en hacer pública la mayor cantidad de información posible, dependiendo en la menor de las medidas respecto a cualquier servicio privado que resultara preciso. Cabe aclarar entonces el desafío que implica utilizar herramientas aún en desarrollo, como lo pueden ser integraciones que todavía no son completamente oficiales y permanecen en fase de pruebas temporalmente de forma experimental.
+Hay que destacar que la filofía del proyecto está en hacer pública la mayor cantidad de información posible, dependiendo en la menor de las medidas respecto a cualquier servicio privado que resultara preciso. Cabe aclarar entonces el desafío que implica utilizar herramientas aún en desarrollo, como lo pueden ser integraciones que todavía no son completamente oficiales y permanecen en fase de pruebas temporalmente de forma experimental.
 
 Actualmente tal sitio tiene como principal dependencia [VueJS](https://vuejs.org/), lo cual resulta completamente discutible.
 
 # Funcionalidad
 La primer funcionalidad es, a prior, la de integrar salas de conversación en Gitter. Ya se dispone de una sala [Lobby](https://gitter.im/cafelug/Lobby/) que integra el chat de CaFeLUG en Telegram mediante [Sameroom](https://sameroom.io). Todavía falta integrar la cuenta oficial de Twitter en la sala [Noticias](https://gitter.im/cafelug/Noticias).
 
-La segunda meta ó funcionalidad es la de lograr un sistema de gestión de contenidos ([CMS](https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenidos)) aprovechando la API de [Github](https://developer.github.com/v3/) para extender nuestra cuenta de usuario con acciones propias de la plataforma (un ejemplo seria la posibilidad cargar una base de datos en este repositorio mediante tal sitio) de manera que seamos los usuarios quienes colaboremos suministrando información para luego en base a nuestra habilidad para gestionar datos (enlaces, posts, artículos de la wikipedia, etcétera) identificar tareas críticas y así buscar soluciones específicas o pendientes para la organización.
+La segunda meta ó funcionalidad es la de lograr un sistema de gestión de contenidos ([CMS](https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenidos)) aprovechando la API de [Github](https://developer.github.com/v3/) para extender nuestra cuenta de usuario con acciones propias de la plataforma (un ejemplo seria la posibilidad de cargar una base de datos en este repositorio mediante tal sitio) de manera que seamos los usuarios quienes colaboremos suministrando información para luego en base a nuestra habilidad para gestionar datos (enlaces, posts, artículos de la wikipedia, etcétera) identificar tareas críticas y así buscar soluciones específicas o pendientes para la organización.
 
 # Pendiente
 - Integrar la cuenta oficial de Twitter en la sala 'Noticias' de Gitter.
