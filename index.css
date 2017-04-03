@@ -1,0 +1,59 @@
+@import 'https://fonts.googleapis.com/css?family=Rubik:400,500';
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+body, html {
+  margin: 0;
+}
+
+i, a {
+  cursor: pointer;
+}
+
+a {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+:link, :visited {
+  text-decoration: none;
+  color: white;
+}
+
+iframe {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 50px);
+  border: none;
+}
+
+.menu {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.right {
+  position: relative;
+  float: right;
+  padding-right: 5px;
+}
+
+.right a {
+  padding: 0 5px 0 25px;
+}
+
+#content {
+  position: absolute;
+  overflow: hidden;
+  height: calc(100% - 50px);
+  width: 100%;
+}
