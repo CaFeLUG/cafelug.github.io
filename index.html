@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://jnicol.github.io/particleground/js/jquery.particleground.js"></script>
   </head>
-  <body>
+  <body onload="doAuth">
     <div id="main" class="menu">
       <a href="#" v-on:click="pageReset()" style="padding-left: 10px">
         <i class="fa" v-bind:class="getIcon"></i> {{title}}
@@ -35,6 +35,12 @@
     </div>
     <div id="content"></div>
     <script>
+    function doAuth() {
+      var code = window.location.href.match(/\?code=(.*)/)[1];
+      $.getJSON('https://cafelug-dms.herokuapp.com/authenticate/'+code, function(data) {
+        console.log(data.token);
+      });
+    }
     var Nav = new Vue({
       el: '#main',
       data: {
@@ -124,7 +130,7 @@
 	document.addEventListener('keypress', (e) => {
 		switch(e.which){
 			case 13: console.log(e);
-				 let reset = true					
+				 let reset = true
 				 if(reset){
 				 	$('content').height('calc(100% - 50px)')
 				 }
