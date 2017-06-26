@@ -12,7 +12,7 @@
       $.getJSON('https://cafelug-dms.herokuapp.com/authenticate/'+code, function(data) {
         if (typeof(Storage) !== "undefined") {
           if(data) localStorage.setItem('token',data.token);
-          window.location='https://www.cafelug.github.io';
+          window.location='https://cafelug.github.io/';
         } else {
           console.log('Sorry! No Web Storage support...')
         }
