@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CaFeLUG DMS</title>
+  </head>
+  <body>
+    <a href="https://github.com/login/oauth/authorize?scope=user:email&client_id=32df65621de991fe9df0">Acceder via GitHub</a>
+    <script>
+      let code = window.location.href.match(/\?code=(.*)/)[1];
+      $.getJSON('https://cafelug-dms.herokuapp.com/authenticate/'+code, function(data) {
+        if (typeof(Storage) !== "undefined") {
+          if(data) localStorage.setItem('token',data.token);
+          window.location='https://www.cafelug.github.io';
+        } else {
+          console.log('Sorry! No Web Storage support...')
+        }
+        console.log(data.token);
+      });
+    </script>
+  </body>
+</html>
