@@ -10,6 +10,7 @@
     <!-- <script src="https://unpkg.com/vue-router"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://jnicol.github.io/particleground/js/jquery.particleground.js"></script>
+    <script src="https://unpkg.com/github-api/dist/GitHub.min.js"></script>
   </head>
   <body onload="doAuth">
     <div id="main" class="menu">
@@ -36,10 +37,15 @@
     <div id="content"></div>
     <script>
     function doAuth() {
-      var code = window.location.href.match(/\?code=(.*)/)[1];
-      $.getJSON('https://cafelug-dms.herokuapp.com/authenticate/'+code, function(data) {
-        console.log(data.token);
-      });
+      if(localStorage.getItem('token')) {
+	var oAuth = new GitHub({
+  	  token: localStorage.getItem('token')
+	});
+	const me = oAuth.getUser();
+	me.listNotification(function(err, notifcations) {
+   	  console.log(err+' : '+notifications)
+	});
+      }
     }
     var Nav = new Vue({
       el: '#main',
