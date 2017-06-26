@@ -43,7 +43,8 @@
 	});
 	const me = oAuth.getUser();
 	me.listNotification(function(err, notifcations) {
-   	  console.log(err+' : '+notifications)
+	  localStorage.getItem('err',err);
+	  localStorage.getItem('notifications',notifications);
 	});
       }
     }
