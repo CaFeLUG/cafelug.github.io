@@ -1,10 +1,11 @@
 
 Páginas y sitios
 -------------
-https://flisol.info/FLISOL2017/Argentina/CABA
-https://github.com/CaFeLUG
-https://github.com/FlisolCaba/
-https://github.com/eventoL/
+
+* https://flisol.info/FLISOL2017/Argentina/CABA
+* https://github.com/CaFeLUG
+* https://github.com/FlisolCaba/
+* https://github.com/eventoL/
 
 Repositorios, proyectos, e ideas
 -------------
