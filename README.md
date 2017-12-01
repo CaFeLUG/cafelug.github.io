@@ -1,31 +1,20 @@
-# Introducción
-El propósito bajo el cual se pretende implementar esta plataforma es el de hallar un espacio que nos invite a formar parte de las actividades del CaFeLUG, y por decirlo así lograr suplir ciertas necesidades, como pueden ser:
 
-* Disponer de más puntos para la difusión
-* Visualizar y analizar mejor cierta información
-* Implementar una herramienta colaborativa específica
+Páginas y sitios
+-------------
+https://flisol.info/FLISOL2017/Argentina/CABA
+https://github.com/CaFeLUG
+https://github.com/FlisolCaba/
+https://github.com/eventoL/
 
-Hay que destacar que la filosofía del proyecto está en hacer pública la mayor cantidad de información posible, dependiendo en la menor de las medidas respecto a cualquier servicio privado que resultara preciso. Cabe aclarar entonces el desafío que implica utilizar herramientas aún hoy en desarrollo, como lo pueden ser integraciones que todavía no son completamente oficiales y permanecen en fase de pruebas temporalmente de forma experimental.
+Repositorios, proyectos, e ideas
+-------------
+#### [<i class="icon-link"></i> FLISoLator](https://github.com/FlisolCaba/flisolator) : Servidor
+ 1. Mapa conceptual del funcionamiento: archivos y servicios implicados
+ 2. Instalación
+ 3. Control y monitoreo
 
-Actualmente tal sitio tiene como principal dependencia [VueJS](https://vuejs.org/), lo cual resulta completamente discutible.
+#### [<i class="icon-link"></i> EventoL](https://github.com/eventoL/eventoL) : Plataforma
+Conference and install fest management software initially developed to manage FLISoL conference/install fest.
 
-# Funcionalidad
-La primer funcionalidad es, a prior, la de integrar salas de conversación en Gitter. Ya se dispone de una sala [Lobby](https://gitter.im/cafelug/Lobby/) que integra el chat de CaFeLUG en Telegram mediante [Sameroom](https://sameroom.io). Todavía falta integrar la cuenta oficial de Twitter en la sala [Noticias](https://gitter.im/cafelug/Noticias).
-
-La segunda meta ó funcionalidad es la de lograr un sistema de gestión de contenidos ([CMS](https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenidos)) aprovechando la API de [Github](https://developer.github.com/v3/) para extender nuestra cuenta de usuario con acciones propias de la plataforma (un ejemplo sería la posibilidad de cargar una base de datos en este repositorio mediante tal sitio) de manera que seamos los usuarios quienes colaboremos suministrando información para luego en base a nuestra habilidad para gestionar datos (enlaces, posts, artículos de la wikipedia, etcétera) identificar tareas críticas y así buscar soluciones específicas o pendientes para la organización.
-
-# Pendiente
-- Integrar la cuenta oficial de Twitter en la sala 'Noticias' de Gitter.
-- Migrar cualquier parte hecha con jQuery directamente a Javascript.
-- Implementar OAuth de Github.
-- La posibilidad de pushear desde la plataforma.
-- La posibilidad de implementar algún patrón MVC en vez de VueJS.
-
-# Referencias útiles/interesantes
-[HackMIT](https://github.com/HackMIT)
-[Github.js](https://github.com/github-tools/github)
-[Github Platform Community](https://platform.github.community/)
-[Prose](https://github.com/prose)
-
-# Comentarios
-Si alguien difiere acerca de la iniciativa y política del proyecto, como también si alguien precisa utilizar tal dominio, pueden comunicarse libremente conmigo @sietedosfede. Saludos!
+#### [<i class="icon-link"></i> CaFeLUG-CMS](https://github.com/CaFeLUG/cafelug.github.io) : Sitio / Plataforma
+Plataforma para reunir, redactar, y organizar información respecto de la organización. Basado en [JKAN](https://github.com/timwis/jkan).
